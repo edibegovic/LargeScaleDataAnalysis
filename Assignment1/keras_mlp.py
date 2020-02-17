@@ -26,9 +26,7 @@ y_test = keras.utils.to_categorical(y_test, 5)
 # Sequential stack of perceptrons (MLP model)
 model = Sequential()
 model.add(Dense(512, activation='relu', input_shape=(784,)))
-model.add(Dropout(0.2))
 model.add(Dense(512, activation='relu'))
-model.add(Dropout(0.2))
 model.add(Dense(5, activation='softmax'))
 
 # Overview of model
